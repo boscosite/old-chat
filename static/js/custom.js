@@ -113,7 +113,7 @@ $(document).ready(function() {
     }
 
 
-    addMessage(message,"avatar.png");
+    addMessage(message,"default (4).jpg");
 
     // 将用户消息保存到数组
     messages.push({"role": "user", "content": message})
