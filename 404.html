@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>网页无法访问</title>
+<style>
+html, body, ul, h2, p{margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body, button, input, textarea {font: 12px/1.5 Tahoma, Helvetica, Arial, 'Microsoft YaHei', sans-serif;}
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+
+body{background: #fdfdfd; min-width: 960px; height: 100%;}
+
+.se-errors{padding:30px 0 40px; background: #fdfdfd;}
+.se-errors .center{margin:auto; width: 550px;}
+.se-errors .cartoon{float: left; margin-left:100px;  width: 44px; height: 43px; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABWCAYAAABLn1FEAAAFgklEQVR4Xu2dfUxVZRzHv4fXy2DYhsB/mgX4h1Oby7VlmkURb4by2p28XcE1U+RFJV8Y6XTLWZJZFigJiryFrCzLZmsrmLaVo1aagi0rGAi+hcBgwN1tz7F7u/dygQucH+cUv+cfzi7nfH/f53O/9znP3e55HsloNJoAoL+/H5W1NWj68Qdca2nG8PCweJmbkwS8vLwwPzgEjy9ZAn1CEtzd3eUrJQG4+XoLCvfuQcfNm07K8WljEZg7Zw72Fe6B+Cv19vWZUjMN6OzqYmoKEpg392Ece68Y0pGSYlPVhzUWaRcXF/j4+EBSsNhMkBocHET/wIBNVzPTDZASkvWm9o4O+R+enp6or6yBr6/vTGCieB+vXL2KDdmbLLqPLVoMaUVYqMloNMovijGjorRM8cIzSTAqbjV6enrkLnt4eEBaFrpSnkWI9ui8R1BWcmwm8VC8rzGJ8bj31z2LLgNWGDEDVhiovRwDZsDEBIjlOcEMmJgAsTwnmBjwS2kpaO9ol6t46XQ8D1aa94qwUBtJngcrTJgBKwzUXo4BM2BiAsTynGAGTEyAWJ4TzICJCRDLc4IZMDEBYnlOMAMmJkAszwn+rwKuP/MxqmqrERUegXWp6TbdKKs4gcaLF5AYG4/w58OIuzi2PLVPsgTH6pNw+85tuXcx0auwZXOOfHzw8CGcOfupfBzg74/Tlf/+ikgN0s749J89G/VVtZOyRwb4+MlylJ+qsJgSkEUzwxXHCWvikLXhlUkZV+oiap9kgO3Tag8kLPQ57Nz2KsRv39Ru1p8qpX2SAh4NcnREJLbl5EGStPOTQkeQlfCpCmDrMVnt9JrrOwKshE9SwGN99JQwr9SbQ+mTDLAzN4/05JQRUziloDmr44zPtLXJyEgzOCtpcx4ZYGemP4EBAag7VT0p40pdRO2TDLCYwFfWVCM6YuQXDZGas+fOQZ+YKE/V1GzUPskAqwlNS7UZMPG7wYAZMDEBYnlOMAMmJkAszwlmwMQEiOU5wQyYmACxPCeYARMTIJbnBDNgYgLE8ppJsL0R4n5b5BvOf0VaigEzYNKAgTrBmnnS8/86RGgGMG1O1VNnwMTsGTADJiZALM8JZsDEBIjlOcEMmJgAsTwnmAETEyCW5wQzYGICxPKcYAZMTIBYnhM83YBfTIg13bl7Vy7LK2BPjf6lpibkF+ywbJERGBAIadfuQtPXjQ0WZT8/P3R3d0/7Phpi9e13iw7B29t7ar0E8N2l77G9sGDa+2Bv/OmnlkO68O1FU37Bzil3SgmBxQsX4eD+A/D4Z5OPyWj+dPln5G3Ph9gVQO1WtP+NBxuVHDlajNrTdWr7kesvf3IZ9hbuntQjt9eam5Gdv0Xe1UbttjZJj5czMh8AFma+aWzAByfK8fuff6jtDasio+RHbyfSfrtxA1lbcy07AEzkWiXPDQkKxnpDBp5YulSWtQA2F+nr64Orqyt0Op2SdUfVqvuoHqVlx0ds8jGRhwFb29qwKS/HZvV/Nzc3rE9fh/g1sRDH1M9JDw0NQSTVfngbAXhaqNoVKas4CbFoh33L3piFuJjVY1rq7OrExtxsdN26ZXOeISUNhpRUNbpjU1MTgIUjR5BF6l7bsQvPrnzGISgxvRRwzQsim0/SClyHQ4Sab7kjyOLjfWDf6/I2Ytat+/59ZOXljLhnaAmu5gCPlmSxVPfhN9/C/JAQmXFPby9y87ei5dfrmhwWrE1pZoiwNuUoyQ/NmiWvA6TTeeH90hKIWYN101pyzd40CXi0JI82fGkVriaHiPGSbA9Zy3A1D1gY/OLL8yh6520M2G2GJ+abOVmbER0eqeZ9edzamh0irJ23trXik88/w+VfrmBocAgLFyxA5AsRCA4KGreDap/wN3BYj8M7yEMHAAAAAElFTkSuQmCC) center no-repeat;margin-top: 19px;background-size: contain; }
+.se-errors .text{float: left; margin-left: 20px; width: 294px;}
+.se-errors .text h2{font-size: 22px; color: #222; font-weight: normal; margin-top: 13px; line-height:29px;font-family:MicrosoftYaHei;}
+.se-errors .text p{font-size:13px;
+font-family:MicrosoftYaHei;
+color:rgba(119,119,119,1);
+line-height:20px; white-space: nowrap;margin-top: 4px;}
+.se-errors p.buttons{margin-top: 16px;}
+.se-errors .buttons a{
+	display: inline-block;
+	min-width: 149px;
+	height: 33px;
+	line-height: 31px;
+	border-radius: 2px;
+	background-color: #4bd252;
+	border: solid 1px #36b148;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	box-sizing:border-box;
+	cursor: pointer;
+	-webkit-user-select:none;
+}
+.se-errors .buttons .network{background: #4bd252 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwOS8xNC8xNVA22ZoAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzQGstOgAAAAsklEQVQoka2SsQ3CMBBFn5NUxJJ3QEKCSGxCxxypsgIVBRVr0LFAikxAmQY2MFIKGnQUSROCDXF4jeX7uu/7tpW1FsAAlnEoYwzRyKYBSbfeARXkICKlhFMqERGnOa2kPMMlTgXI6wKA4+IQZnB93HwywPRX6N2BIOR14Tw5S1fs57tebRBBxyk61gA0z6artXsdpf4J3tlctgCc1ydnhL/9xI9ks+VXA2+EX4iAakJ/9QLMPGw0a6Lf6gAAAABJRU5ErkJggg==) no-repeat 17px center; padding-left: 40px;padding-right: 12px;min-width: none; margin-right: 6px; display: none;}
+.se-errors .buttons .network:hover{background-color: #4fe256;border: solid 1px #49c74f;}
+.se-errors .buttons .network:active{background-color: #40bf46;border: solid 1px #31b945;}
+.se-errors .buttons .refresh{width: 108px;min-width: 108px;height: 32px;line-height: 32px; ;background:rgba(255,255,255,1);text-align: center;border-radius:2px;font-size:13px;font-family:MicrosoftYaHei;color:rgba(34,34,34,1);border:1px solid rgba(217,217,217,1);}
+.se-errors .buttons .refresh:hover{background:rgba(0,0,0,0.04);border-radius:2px;border:1px solid rgba(217,217,217,1);}
+.se-errors .buttons .refresh:active{background:rgba(0,0,0,0.1);
+border-radius:2px;border:1px solid rgba(203,203,203,1);}
+#errors_iframe{width: 100%; height: 0; border: 0; box-sizing:border-box;}
+</style>
+</head>
+<body>
+	<div class="body-wrap" id="body-wrap">
+		<div class="se-errors clearfix">
+			<div class="center">
+				<div class="cartoon"></div>
+				<div class="text">
+					<h2>hi，真不巧，网页走丢了。</h2>
+					<p>不如返回主页吧。</p>
+					<p class="buttons">
+						<a href="https://lhynews.github.io" style="text-decoration: none;">返回主页</button>					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+<iframe id="errors_iframe"></iframe>
+<script src="se_errors.js"></script>
+</body>
+</html>
