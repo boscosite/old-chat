@@ -127,7 +127,7 @@ $(document).ready(function() {
 
     // 发送信息到后台
     $.ajax({
-      url: 'https://chatbot.theb.ai/#/chat/1002',
+      url: 'https://open.aiproxy.xyz/v1/chat/completions',
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
